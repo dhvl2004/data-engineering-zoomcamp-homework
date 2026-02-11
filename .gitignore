@@ -1,0 +1,5 @@
+.venv
+.ipynb_checkpoints
+
+# Data folders
+ny_taxi_postgres_data
