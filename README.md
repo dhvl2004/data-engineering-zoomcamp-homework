@@ -1,5 +1,5 @@
 # data-engineering-zoomcamp-homework
-Homework for https://github.com/DataTalksClub/data-engineering-zoomcamp/
+Homework for DataTalksClub's [Data Engineering Camp](https://github.com/DataTalksClub/data-engineering-zoomcamp/)
 
 ## Docker
 ### Docker Image
@@ -9,7 +9,7 @@ A Docker Image is a template for creating a container
 A container is a self-contained and isolated environment
 - Create a container from a Docker Image:
     `docker run -it --option my_docker_image`
-    - Use tag `-slim` (e.g python:3.13.11-slim) to create smaller container (run faster)
+    - Use tag `-slim` (e.g `python:3.13.11-slim`) to create smaller container (run faster)
     - Use option `--entrypoint=bash` to start run in bash for debugging
     - Use option `--rm` to remove one-time use containers after each use
     - Append `-v /dir/in/local:/dir/in/container` to link a local directory to a container directory (Volume Mapping)
@@ -22,7 +22,7 @@ A container is a self-contained and isolated environment
 Dockerfile helps creating a Docker Image from other image(s) and/or file(s)
 - `FROM another_docker_image`: Initiate from another image
 - `WORKDIR /path/to/dir`: Change working directory in the image
-- `COPY /path/to/dir /path/to/`: Copy directory(s)/file(s) to a directory in the image
+- `COPY /path/to/dir /path/to/`: Copy directory/file(s) to a directory in the image
 - `RUN`: Execute a command
 - `ENTRYPOINT ["default", "executable", "command"]`: Default command to be executed on container run
 
